@@ -1,0 +1,2 @@
+#!/bin/bash
+$CFile=o-main.c ; ./0-preprocessor
