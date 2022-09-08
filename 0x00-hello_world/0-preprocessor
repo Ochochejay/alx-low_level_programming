@@ -1,2 +1,2 @@
 #!/bin/bash
-$CFile=hello.c ; gcc -o hello.c c
+$CFile=gcc -o 0-main.c c
