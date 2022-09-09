@@ -5,8 +5,8 @@
 #include <stdio.h>
 
 /**
- *main - Determines positive,negative or zero and prints to stdio.
- * Returns: 0 if success.
+ * main - Determines positive,negative or zero and prints to stdio.
+ * Return: 0 if success.
 */
 
 int main(void)
