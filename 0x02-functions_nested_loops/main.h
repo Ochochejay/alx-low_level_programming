@@ -1,4 +1,5 @@
 #ifndef main
+#define main
 void _putchar()
 {
 	putchar('_');
@@ -10,5 +11,4 @@ void _putchar()
 	putchar('a');
 	putchar('r');
 }
-#define main
 #endif
