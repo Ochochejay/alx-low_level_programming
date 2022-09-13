@@ -6,7 +6,7 @@ void _putchar(void)
 	putchar('u');
 	putchar('t');
 	putchar('c');
-	putchat('h');
+	putchar('h');
 	putchar('a');
 	putchar('r');
 }
