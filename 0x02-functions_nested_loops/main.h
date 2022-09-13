@@ -1,5 +1,5 @@
 #ifndef main
-void _putchar(void)
+void _putchar()
 {
 	putchar('_');
 	putchar('p');
