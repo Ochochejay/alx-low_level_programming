@@ -1,16 +1,20 @@
 #include "main.h"
 
 /**
- * main - Entry point
- * Description: Prints alphabets in lower case to stdout.
- * Return: 0.
+ * print_alphabet - Prints alphabets in lower case to stdout.
+ * Return: Nothing.
  *
 */
 
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
+	char c = 'a';
 
-	return (0);
+	while (a <= 'z')
+	{
+		_putchar(c);
+		c++;
+	}
+	_putchar('\n');
 }
 
