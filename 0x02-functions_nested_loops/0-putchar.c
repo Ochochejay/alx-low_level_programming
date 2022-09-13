@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "main.h"
-
 /**
  * main - Entry point.
  * Description: Prints _putchar to stdout.
@@ -10,7 +9,6 @@
 int main(void)
 {
 	_putchar();
-
 	putchar('\n');
 
 	return (0);
