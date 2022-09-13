@@ -15,4 +15,15 @@ void _putchar()
 	putchar('\n');
 }
 
+void print_alphabet(void)
+{
+	char alpha = 'a';
+
+	while (alpha <= 'z')
+	{
+		putchar(alpha);
+		alpha++;
+	}
+	putchar('\n');
+}
 #endif
