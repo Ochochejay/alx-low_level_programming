@@ -1,10 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - Prints lower case alphabetw to stdout.
+ * main - Calls the print_alphabet function.
+ *
  * Return: 0.
  *
- * print_alphabet - computes lower case alphabet.
+ * print_alphabet - Prints alphabets to stdout.
 */
 	void print_alphabet(void);
 
@@ -16,12 +17,3 @@ int main(void)
 	return (0);
 }
 
-void print_alphabet(void)
-{
-	char aplha = 'a';
-
-	while (alpha <= 'z')
-	{
-		putchar(alpha);
-	}
-}
