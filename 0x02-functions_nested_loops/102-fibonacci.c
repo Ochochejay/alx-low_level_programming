@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	int num, x, y, z;
+	long num, x, y, z;
 
 	y = 0;
 	z = 1;
@@ -16,7 +16,7 @@ int main(void)
 	{
 		num = y + z;
 
-		printf("%d", num);
+		printf("%l", num);
 
 		if (x < 49)
 			printf(", ");
