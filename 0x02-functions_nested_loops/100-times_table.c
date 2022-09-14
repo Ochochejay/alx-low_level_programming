@@ -15,7 +15,7 @@ void print_times_table(int n)
 		{
 			for (b = 0; b <= n; b++)
 			{
-				(char)c = a * b;
+				c = (char)(a * b);
 
 					_putchar(c);
 
