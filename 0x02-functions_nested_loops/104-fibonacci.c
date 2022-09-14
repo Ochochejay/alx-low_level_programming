@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	int counter, x, y, z;
+	long int counter, x, y, z;
 
 	y = 0;
 	z = 1;
@@ -17,7 +17,7 @@ int main(void)
 	{
 		x = y + z;
 
-		printf("%d", x);
+		printf("%ld", x);
 
 		if (counter < 97)
 			printf(", ");
