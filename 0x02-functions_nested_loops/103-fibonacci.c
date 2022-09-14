@@ -2,7 +2,7 @@
 
 /**
  * main - Prints even sum of fibonacci numbers.
- * Return: 0.
+ * Return: 0 on success.
 */
 
 int main(void)
