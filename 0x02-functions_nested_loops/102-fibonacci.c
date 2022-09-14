@@ -21,7 +21,8 @@ int main(void)
 		if (x < 49)
 			printf(", ");
 
-		y = num;
+		y = z;
+		z = num;
 	}
 	putchar('\n');
 
