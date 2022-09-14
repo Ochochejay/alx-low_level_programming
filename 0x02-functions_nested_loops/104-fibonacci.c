@@ -14,13 +14,13 @@ int main(void)
 	z = 1;
 	counter = 0;
 
-	while (counter < 96)
+	while (counter < 98)
 	{
 		x = y + z;
 
 		printf("%lu", x);
 
-		if (counter < 95)
+		if (counter < 97)
 			printf(", ");
 
 		y = z;
