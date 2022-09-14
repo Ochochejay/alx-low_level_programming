@@ -15,7 +15,7 @@ int main(void)
 	y = 0;
 	z = 1;
 
-	for (x = 0; x <= 4000000; x++)
+	while (sum <= 4000000)
 	{
 		num = y + z;
 
