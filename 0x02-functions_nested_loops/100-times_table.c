@@ -9,20 +9,15 @@ void print_times_table(int n)
 {
 	if (n >= 0 && n <= 15)
 	{
-		int a, b, c, r;
+		int a, b, c;
 
 		for (a = 0; a <= n; a++)
 		{
 			for (b = 0; b <= n; b++)
 			{
-				c = a * b;
-				r = c % 10;
+				(char)c = a * b;
 
-				if (n >= 0 && n <= 9)
-					_putchar(r + '0');
-
-				else if (n > 9 && n <= 15)
-					_putchar(r + 'A');
+					_putchar(c);
 
 				if (b < n)
 				{
