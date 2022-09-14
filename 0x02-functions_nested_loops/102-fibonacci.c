@@ -16,7 +16,7 @@ int main(void)
 	{
 		num = y + z;
 
-		printf("%l", num);
+		printf("%d", num);
 
 		if (x < 49)
 			printf(", ");
