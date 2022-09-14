@@ -21,7 +21,8 @@ void print_times_table(int n)
 				if (b < (n - 1))
 				{
 					_putchar(',');
-					_putchar('  ');
+					_putchar(' ');
+					_putchar(' ');
 				}
 			}
 			_putchar('\n');
