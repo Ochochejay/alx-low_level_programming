@@ -1,19 +1,20 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Calls the print_alphabet function.
+ * print_alphabet - Prints alphabets in lower case to stdout.
+ * Return: Nothing.
  *
- * Return: 0.
- *
- * print_alphabet - Prints alphabets to stdout.
 */
-	void print_alphabet(void);
 
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	putchar('\n');
+	char c = 'a';
 
-	return (0);
+	while (c <= 'z')
+	{
+		_putchar(c);
+		c++;
+	}
+	_putchar('\n');
 }
 
