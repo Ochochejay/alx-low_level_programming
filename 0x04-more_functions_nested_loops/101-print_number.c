@@ -39,11 +39,11 @@ void print_number(int n)
 		_putchar(a + '0');
 	}
 
-	else
+	else if (n >= 1000 && n < 10000)
 	{
 		_putchar(e + '0');
 		_putchar(f + '0');
 		_putchar(d + '0');
-		_putchar(d + '0');
+		_putchar(a + '0');
 	}
 }
