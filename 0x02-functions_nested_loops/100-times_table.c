@@ -22,12 +22,29 @@ void print_times_table(int n)
 				g = e % 10;
 
 				if (c <= 9)
+				{
 					_putchar(d + '0');
+
+					if (b < n)
+					{
+						_putchar(',')
+						_putchar(' ');
+						_putchar(' ');
+						_putchar(' ');
+					}
+				}
 
 				else if (c > 9 && c <= 99)
 				{
 					_putchar(e + '0');
 					_putchar(d + '0');
+
+					if (b < n)
+					{
+						_putchar(',');
+						_putchar(' ');
+						_putchar(' ');
+					}
 				}
 
 				else if (c >= 100)
@@ -35,17 +52,15 @@ void print_times_table(int n)
 					_putchar(f + '0');
 					_putchar(g + '0');
 					_putchar(d + '0');
-				}
 
-				if (b < n)
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
+					if (b < n)
+					{
+						_putchar(',');
+						_putchar(' ');
+					}
 				}
 			}
 			_putchar('\n');
 		}
 	}
 }
-
