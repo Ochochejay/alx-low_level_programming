@@ -39,21 +39,21 @@ void print_times_table(int n)
 
 				if ((b < n) && (c <= 9))
 				{
-					_printchar(',');
-					_printchar(' ');
-					_printchar(' ');
-					_printchar(' ');
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(' ');
 				}
 				else if ((b < n) && (c > 9 && c <= 99))
 				{
-					_printchar(',');
-					_printchar(' ');
-					_printchar(' ');
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
 				}
 				else if ((b < n) && (c >= 100))
 				{
-					_printchar(',');
-					_printchar(' ');
+					_putchar(',');
+					_putchar(' ');
 				}
 			}
 			_putchar('\n');
