@@ -31,25 +31,16 @@ void print_times_table(int n)
 					_putchar(d + '0');
 				}
 
-				if ((b < n) && (c <= 9))
+				if (b < n)
 				{
 					_putchar(',');
 					_putchar(' ');
-					_putchar(' ');
-					_putchar(' ');
+					if (c <= 99)
+						_putchar(' ');
+					if (c <= 9)
+						_putchar(' ');
 				}
-				else if ((b < n) && (c > 9 && c <= 99))
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-				}
-				else if ((b < n) && (c >= 100))
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
-			}
+		}
 			_putchar('\n');
 		}
 	}
