@@ -9,7 +9,7 @@
 void rev_string(char *s)
 {
 	int a, b;
-	char str[100];
+	char str[500];
 
 	a = 0;
 	while (*(s + a))
