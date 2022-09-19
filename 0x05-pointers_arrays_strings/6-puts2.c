@@ -18,5 +18,6 @@ void puts2(char *str)
 	for (x = 0; x < i; x += 2)
 		_putchar(*(str + x));
 
+	_putchar('.');
 	_putchar('\n');
 }
