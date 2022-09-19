@@ -8,16 +8,16 @@
 
 void puts2(char *str)
 {
-	int i, x;
+	int i;
 
 	i = 0;
 	while (*(str + i))
+	{
+		_putchar(*(str + i));
+		if (*(str + i) == '\')
+			_putchar('\\');
 		i++;
+	}
 
-	i--;
-	for (x = 0; x < i; x += 2)
-		_putchar(*(str + x));
-
-	_putchar('.');
 	_putchar('\n');
 }
