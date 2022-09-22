@@ -19,9 +19,15 @@ char *rot13(char *s)
 		while (j < 52)
 		{
 			if (s[i] == str1[j])
+			{
 				s[i] = str2[j];
+				break;
+			}
 			j++;
 		}
+		j = 0;
+		i++;
 	}
 
 	return (s);
+}
