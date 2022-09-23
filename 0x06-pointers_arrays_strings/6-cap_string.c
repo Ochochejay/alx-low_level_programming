@@ -8,35 +8,28 @@
 
 char *cap_string(char *str)
 {
-	int i;
-	char lower, upper;
+	int i, j, k;
+	char sign[] = " \t\n,;.!?\"(){}";
+	char lower[] = "abcdefghijklmnopqrstuvwxyz";
+	char upper[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-	lower = 'a', upper = 'A';
-	i = 0;
+	i = j = 0;
 
 	while (str[i] != '\0')
 	{
-		while (str[i] == ',' || str[i] == ';' || str[i] == '.' || str[i] == '!')
+		for (j = 0; j < 13; j++)
 		{
-			while (str[i] == '?' || str[i] == '"' || str[i] == '(' || str[i] == ')')
+			if (str[i] == sign[j])
 			{
-/**
-				if (str[i] == '{' || str[i] == '}')
-				{*/
-					while (str[i + 1] >= 'a' && str[i + 1] <= 'z')
-					{
-						if (str[i + 1] == lower)
-							str[i + 1] = upper;
-
-						lower++, upper++;
-					}
+				for (k = 0; str[i + 1] != 0 && k < 26; k++)
+				{
+					if (str[i + 1] == lower[k])
+						str[i + 1] = upper[k];
+				}
 			}
 		}
-
-		lower = 'a', upper = 'A';
 		i++;
 	}
-
 
 	return (str);
 }
