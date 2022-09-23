@@ -1,8 +1,4 @@
 #include <stdio.h>
-/**
- * main - changes a[2] value.
- * Return: 0 on success.
- */
 
 int main(void)
 {
