@@ -17,6 +17,13 @@ char *cap_string(char *str)
 
 	while (str[i] != '\0')
 	{
+		while (str[0] >= 'a' && str[0] <= 'z')
+		{
+			if (str[0] == lower[j])
+				str[0] = upper[j];
+			j++;
+		}
+
 		for (j = 0; j < 13; j++)
 		{
 			if (str[i] == sign[j])
