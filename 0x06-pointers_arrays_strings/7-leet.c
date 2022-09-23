@@ -11,16 +11,15 @@
 char *leet(char *s)
 {
 	int i, j;
-	char small[] = "aeotl";
-	char big[] = "AEOTL";
-	char num[] = "43071";
+	char c[] = "AaEeOoTtLl";
+	char num[] = "4433007711";
 
 	i = j = 0;
 	while (s[i] != '\0')
 	{
-		while (j < 5)
+		while (j < 10)
 		{
-			if (s[i] == small[j] || s[i] == big[j])
+			if (s[i] == c[j])
 				s[i] = num[j];
 
 			j++;
