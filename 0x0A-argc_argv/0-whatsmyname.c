@@ -2,8 +2,8 @@
 
 /**
  * main - Entry point.
- * @argc - argument count
- * @argv - argument vector
+ * @argc: argument count
+ * @argv: argument vecto
  * Return: 0 on success.
  */
 
