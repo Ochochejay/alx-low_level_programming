@@ -20,10 +20,9 @@ int main(int argc, char *argv[])
 	}
 
 	j = atoi(argv[1]);
+
 	if (j < 0)
-	{
-		j *= -1;
-	}
+		printf("0\n");
 
 	while (j != 0)
 	{
