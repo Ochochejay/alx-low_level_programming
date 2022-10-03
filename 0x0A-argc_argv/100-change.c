@@ -10,9 +10,9 @@
 int main(int argc, char *argv[])
 {
 	int n[] = {25, 10, 5, 2, 1};
-	int i, j, ans, rem, coins;
+	int i, j, k, ans, rem, coins;
 
-	coins = 0;
+	coins = k = 0;
 	if (argc != 2)
 	{
 		printf("Error\n");
@@ -20,6 +20,12 @@ int main(int argc, char *argv[])
 	}
 
 	j = atoi(argv[1]);
+	if (j < 0)
+	{
+		j *= -1;
+		k++;
+	}
+
 	while (j != 0)
 	{
 		for (i = 0; i < 5; i++)
@@ -35,6 +41,10 @@ int main(int argc, char *argv[])
 		}
 	}
 
+	if (k > 0)
+		putchar('-');
+
 	printf("%d\n", coins);
+
 	return (0);
 }
