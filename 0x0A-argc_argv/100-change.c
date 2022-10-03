@@ -23,23 +23,25 @@ int main(int argc, char *argv[])
 
 	if (j < 0)
 		printf("0\n");
-
-	while (j != 0)
+	else
 	{
-		for (i = 0; i < 5; i++)
+		while (j != 0)
 		{
-			ans = j / n[i];
-			rem = j % n[i];
-			if (ans > 0)
+			for (i = 0; i < 5; i++)
 			{
-				coins += ans;
-				j = rem;
-				break;
+				ans = j / n[i];
+				rem = j % n[i];
+				if (ans > 0)
+				{
+					coins += ans;
+					j = rem;
+					break;
+				}
 			}
 		}
-	}
 
-	printf("%d\n", coins);
+		printf("%d\n", coins);
+	}
 
 	return (0);
 }
