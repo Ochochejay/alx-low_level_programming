@@ -30,14 +30,14 @@ char *argstostr(int ac, char **av)
 	int i, j, len;
 	char *c;
 
-	len = 0;
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
+	len = 0;
 	for (i = 0; i < ac; i++)
 		len += _length(i, av);
 
-	c = malloc((len) * sizeof(char));
+	c = malloc((++len) * sizeof(char));
 
 	if (c == NULL)
 		return (NULL);
