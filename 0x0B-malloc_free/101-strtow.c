@@ -30,7 +30,7 @@ char **strtow(char *str)
 			k++;
 			if (str[i + 1] == ' ' || str[i + 1] == '\0')
 			{
-				arr[j] = malloc(sizeof(char) * (k + 1);
+				arr[j] = malloc(sizeof(char) * (k + 1));
 				if (arr[j] == NULL)
 				{
 					for (l = 0; l < j; l++)
