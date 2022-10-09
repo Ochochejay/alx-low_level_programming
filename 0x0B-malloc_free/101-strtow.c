@@ -12,7 +12,7 @@ char **strtow(char *str)
 	int i, j, k, l, count;
 
 	count = k = j = 0;
-	if (!str || !*str || str[0] == " ")
+	if (!str || !*str)
 		return (NULL);
 
 	for (i = 0; str[i]; i++)
@@ -21,7 +21,7 @@ char **strtow(char *str)
 			count++;
 	}
 	arr = malloc(sizeof(char *) * (count + 1));
-	if (arr == NULL)
+	if (arr == NULL || count == 0)
 		return (NULL);
 	for (i = 0; str[i]; i++)
 	{
@@ -46,6 +46,6 @@ char **strtow(char *str)
 			}
 		}
 	}
-	arr[count] = '\0';
+	arr[count] = NULL;
 	return (arr);
 }
