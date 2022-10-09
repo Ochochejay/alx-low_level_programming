@@ -12,7 +12,7 @@ char **strtow(char *str)
 	int i, j, k, l, count;
 
 	count = k = j = 0;
-	if (!str || !*str || *str == " ")
+	if (!str || !*str || str[0] == " ")
 		return (NULL);
 
 	for (i = 0; str[i]; i++)
