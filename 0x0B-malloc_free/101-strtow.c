@@ -39,7 +39,7 @@ char **strtow(char *str)
 					return (NULL);
 				}
 				for (l = 0; l < k; l++)
-					arr[j][l] = str[i - k + 1+ l];
+					arr[j][l] = str[i - k + 1 + l];
 				arr[j][l] = '\0';
 				j++;
 				k = 0;
