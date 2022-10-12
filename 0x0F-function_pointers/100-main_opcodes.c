@@ -13,7 +13,7 @@ void print_opcodes(char *m, int n)
 
 	for (i = 0; i < n; i++)
 	{
-		printf("%hhx", m[i]);
+		printf("%.2hhx", m[i]);
 		if (i < (n - 1))
 			printf(" ");
 	}
@@ -43,7 +43,7 @@ int main(int ac, char *av[])
 		printf("Error\n");
 		exit(2);
 	}
-	print_opcodes((char *)&main, i);
+	print_opcodes((char *)main, i);
 
 	return (0);
 }
