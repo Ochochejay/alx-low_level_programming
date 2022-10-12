@@ -43,7 +43,7 @@ int main(int ac, char *av[])
 		printf("Error\n");
 		exit(2);
 	}
-	print_opcodes((char *)main, i);
+	print_opcodes((char *)&main, i);
 
 	return (0);
 }
