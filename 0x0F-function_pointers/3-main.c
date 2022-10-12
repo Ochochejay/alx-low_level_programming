@@ -14,7 +14,7 @@ int main(int ac, char *av[])
 
 	if (ac != 4)
 	{
-		puts("Error");
+		printf("Error\n");
 		exit(98);
 	}
 
@@ -24,12 +24,11 @@ int main(int ac, char *av[])
 
 	if (f == NULL)
 	{
-		puts("Error");
+		printf("Error\n");
 		exit(99);
 	}
 
 	result = f(x, y);
-
 	printf("%d\n", result);
 
 	return (0);
