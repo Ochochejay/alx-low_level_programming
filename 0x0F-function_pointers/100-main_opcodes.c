@@ -13,7 +13,7 @@ void print_opcodes(char *m, int n)
 
 	for (i = 0; i < n; i++)
 	{
-		printf("%02x", m[i]);
+		printf("%hhx", m[i]);
 		if (i < (n - 1))
 			printf(" ");
 	}
