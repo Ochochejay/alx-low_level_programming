@@ -1,17 +1,12 @@
-section .text
-	global _start
-_start:
-	mov eax, 4		;
-	mov ebx, 1		;
-	mov ecx, string		;
-	mov edx, length		;
-	int 80h			;
+global 	main
+	extern 	printf
 
-	mov eax, 1
-	mov ebx, 0
-	int 80h
-
-section .data
-	string: db "Hello, Holberton", 0x0E
-	length: equ 17
-
+	section .text
+main:
+	mov	rdi, format
+	mov	rax, 0
+	call	printf
+	mov	rax, 0
+	ret
+format:
+	db "Hello, Holberton", 10, 0
