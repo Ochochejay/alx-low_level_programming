@@ -8,13 +8,19 @@
 
 void free_list(list_t *head)
 {
-	while (head)
+	if (head)
 	{
-		free(head->str);
-		free(head->next);
-		head = head->next;
-	}
+		while (head)
+		{
+			if (head->str)
+				free(head->str);
+			if (head->next)
+				free(head->next);
+			head = head->next;
+		}
 		free(new);
 		free(head);
+	}
+
 
 }
