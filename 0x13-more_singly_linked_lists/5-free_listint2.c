@@ -16,5 +16,5 @@ void free_listint2(listint_t **head)
 		free(tmp);
 		tmp = *head;
 	}
-	*head = NULL;
+	*head = NULL, head = NULL;
 }
