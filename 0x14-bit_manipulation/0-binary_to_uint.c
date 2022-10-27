@@ -24,7 +24,7 @@ unsigned int binary_to_uint(const char *b)
 
 	while (b[i])
 	{
-		ans += b[i] - 48 << len;
+		ans += (b[i] - 48) << len;
 		len--, i++;
 	}
 
